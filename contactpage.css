@@ -1,0 +1,122 @@
+/* These are the fonts I used for my about page */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300&family=Nunito:wght@200&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@500&display=swap');
+/* This gets rid of the white border around my about page */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* This is the background color of my website */
+body{
+    background-color: #fcc107;
+}
+/* This makes my navbar have no bullet points, have a background, and makes the color black */
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    height: 75px;
+    padding: auto;
+}
+/* This puts the nav bar items on the right of the nav bar*/
+li{
+    float: right;
+}
+
+/* Removes underlines from navbar items and changes the font & color*/
+li a{
+    text-decoration: none;
+    color: white;
+    padding: 25px 20px;
+    font-family: 'Montserrat';
+    display: inline-block;
+}
+/* Makes a hover underline below the navbar links */
+li a::after{
+    content: ' '; 
+    background-color: white; 
+    height: 1.5px;  
+    width: 0;  
+    border-radius: 50px ;
+    display: block; 
+}
+/* Makes the underline length 100% of the link, with a transition of 0.3 seconds*/
+li a:hover:after{
+    width: 100%; 
+    transition: 0.3s;
+}
+/* The design of the logo on the left side of the navbar, that links to the homepage*/
+.logo{
+    color: white;
+    font-size: 20px;
+    font-family: 'Raleway';
+    padding: 25px;
+}
+/* Makes the logo link have no underline*/
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Changes the size and font of the "Contact" part of the contact page*/
+.contactpagehead{
+    font-size: 60px;
+    margin: 20px;
+    font-family: 'Montserrat';
+    font-style: italic;
+    
+}
+/* Changes the dimensions of the line under the "Contact" text */
+.horizontal-line{
+    height: 3px;
+    width: 300px;
+    background-color: black;
+    margin-left: 10px;
+}
+/* Changes the size and font of the text under the "Contact" part of the contact page*/
+.contacttext{
+    font-size: 25px;
+    font-weight: 100;
+    width: 400px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: 'raleway';
+}
+/* Changes the size and font of the text under the contact links*/
+h3{
+    font-family: 'Montserrat';
+    text-align: right;
+    margin-right: 75px;
+    margin-top: 70px;
+    position: relative;
+    bottom: 250px;
+    
+}
+/* Changes the font and size of the instagram link, as well as making it have a gradient from yellow to blueviolet */
+.instalink{
+    font-size: 30px;
+    font-weight: 800;
+    background: -webkit-linear-gradient(#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Changes the font and size of the text under the instagram link*/
+.instalinktext{
+    font-size: 15px;
+    font-family: 'noto sans';
+    text-align: right;
+    position: relative;
+    bottom: 240px;
+    margin-right: 75px;
+}
+/* Changes the size of the signup link*/
+.signuplink{
+    font-size: 25px;
+}
+/* Changes the font and size of the text under the signup link */
+p{
+    font-size: 15px;
+    font-family: 'noto sans';
+    margin-top: 10px;
+    
+}

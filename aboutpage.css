@@ -1,0 +1,118 @@
+/* These are the fonts I used for my about page */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@500&display=swap');
+/* This gets rid of the white border around my about page */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* This changes the background color of my about page */
+body{
+    background-color: #fcc107;
+}
+/* This makes my navbar have no bullet points, have a background, and makes the color black */
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    height: 75px;
+    padding: auto;
+}
+/* This puts the nav bar items on the right of the nav bar*/
+li{
+    float: right;
+}
+
+/* Removes underlines from navbar items and changes the font & color*/
+li a{
+    text-decoration: none;
+    color: white;
+    padding: 25px 20px;
+    font-family: 'Montserrat';
+    display: inline-block;
+}
+/* Makes a hover underline below the navbar links */
+li a::after{
+    content: ' '; 
+    background-color: white; 
+    height: 1.5px;  
+    width: 0;  
+    border-radius: 50px ;
+    display: block; 
+}
+/* Makes the underline length 100% of the link, with a transition of 0.3 seconds*/
+li a:hover:after{
+    width: 100%; 
+    transition: 0.3s;
+}
+/* The design of the logo on the left side of the navbar, that links to the homepage*/
+.logo{
+    color: white;
+    font-size: 20px;
+    font-family: 'Raleway';
+    padding: 25px;
+}
+/* Makes the logo link have no underline*/
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Changes the size and font of the "About" part of the about page*/
+.aboutpagehead{
+    font-size: 60px;
+    margin: 20px;
+    font-family: 'Montserrat';
+    font-style: italic;
+    
+}
+/* Changes the dimensions of the line under the "About" text */ 
+.horizontal-line{
+    height: 3px;
+    width: 300px;
+    background-color: black;
+    margin-left: 10px;
+}
+/* Changes the size and font of the "What We DO" part of the about page*/
+.abouttexthead{
+    margin: 20px;
+    font-family: 'montserrat';
+    font-size: 35px;
+    font-weight: 600;
+    
+}
+/* Changes the size and font of the text under the "What We Do" part of the about page*/
+.abouttext{
+    font-size: 20px;
+    font-weight: 100;
+    width: 500px;
+    margin-left: 20px;
+    font-family: 'Raleway';
+}
+/* Changes the size and font of the "Problem/Why?" part of the about page*/
+.problemtexthead{
+    font-family: 'montserrat';
+    font-size: 35px;
+    font-weight: 600;
+    float: right;
+    position: relative;
+    top: 100px;
+    margin-right: 20px;
+}
+/* Changes the size and font of the text under the "Problem/Why?" part of the about page*/
+.problemtext{
+    font-family: 'raleway';
+    font-weight: 600;
+    width: 400px;
+    font-size: 20px;
+    float: right;
+    position: relative;
+    top: 150px;
+    left: 250px;
+   
+}
+
+
+
+
